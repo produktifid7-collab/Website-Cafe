@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="description" content="Nikmati pengalaman kopi premium terbaik dengan biji kopi pilihan asli Indonesia di Coffee Toffee.">
+<meta name="keywords" content="cafe, kopi, coffee toffee, tempat ngopi, biji kopi indonesia">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<a href="https://wa.me/6281234567890?text=Halo%20Coffee%20Toffee,%20saya%20ingin%20tanya%20tentang%20menu..." class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+    <span>Pesan via WA</span>
+</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Toffee - Premium Coffee Experience</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i> coffee <span>toffee</span>
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#kopi">KOPI</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#layanan">LAYANAN</a></li>
+                    <li><a href="#peluang">PELUANG</a></li>
+                    <li><a href="#tentang">TENTANG KAMI</a></li>
+                    <li><a href="#kontak">KONTAK</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content fade-in-up">
+            <div class="tree-icon">
+                <i class="fas fa-tree"></i>
+            </div>
+            <h1>OUR PLANTATION</h1>
+            <p class="subtitle">JAVA-MOCHA ORIGIN</p>
+            
+            <div class="circle-img-container">
+                <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coffee Berry">
+            </div>
+
+            <div class="bottom-text">
+    <h2>PERKEBUNAN KAMI</h2>
+    <p>Terletak di lereng gunung Argopuro dengan ketinggian di 600m - 900m...</p>
+    <a href="#kopi" class="btn-primary">Jelajahi Rasa</a>
+</div>
+        </div>
+    </section>
+
+    <section id="kopi" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Koleksi Biji Kopi</h2>
+                <p>Dipetik dari biji pilihan terbaik nusantara</p>
+            </div>
+            <div class="grid-3">
+                <div class="card hover-effect">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Arabica">
+                    <h3>Java Arabica</h3>
+                    <p>Aroma floral dengan tingkat keasaman medium yang menyegarkan.</p>
+                </div>
+                <div class="card hover-effect">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Robusta">
+                    <h3>Sumatra Robusta</h3>
+                    <p>Body tebal dengan rasa coklat pahit yang khas dan kuat.</p>
+                </div>
+                <div class="card hover-effect">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Blend">
+                    <h3>House Blend</h3>
+                    <p>Campuran rahasia barista kami untuk pengalaman espresso sempurna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Favorit</h2>
+                <p>Rasakan kenikmatan dalam setiap tegukan</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item fade-in-left">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=200&q=80" alt="Cappucino">
+                    <div class="menu-details">
+                        <h4>Cappuccino Italiano</h4>
+                        <span class="price">Rp 35.000</span>
+                        <p>Espresso, Steamed Milk, Foam</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in-right">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=200&q=80" alt="Latte">
+                    <div class="menu-details">
+                        <h4>Caramel Macchiato</h4>
+                        <span class="price">Rp 50.000</span>
+                        <p>Vanilla, Espresso, Milk, Caramel</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in-left">
+                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=200&q=80" alt="Manual Brew">
+                    <div class="menu-details">
+                        <h4>V60 Manual Brew</h4>
+                        <span class="price">Rp 38.000</span>
+                        <p>Single Origin Selection</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in-right">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=200&q=80" alt="Soda">
+                    <div class="menu-details">
+                        <h4>Summer Mojito</h4>
+                        <span class="price">Rp 30.000</span>
+                        <p>Lime, Mint, Soda, Syrup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <button class="btn-secondary">Lihat Menu Lengkap</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="section-padding parallax-bg">
+        <div class="overlay-dark"></div>
+        <div class="container content-relative">
+            <div class="grid-2">
+                <div class="text-col fade-in-up">
+                    <h2>Layanan & Event</h2>
+                    <p>Kami menyediakan layanan catering kopi untuk acara pernikahan, seminar, atau gathering kantor Anda. Barista profesional kami siap menyajikan kopi terbaik di tempat Anda.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Mobile Coffee Bar</li>
+                        <li><i class="fas fa-check"></i> Corporate Meeting Packages</li>
+                        <li><i class="fas fa-check"></i> Barista Training Class</li>
+                    </ul>
+                </div>
+                <div id="peluang" class="text-col fade-in-up delay-200">
+                    <h2>Peluang Franchise</h2>
+                    <p>Bergabunglah menjadi mitra Coffee Toffee. Dengan sistem manajemen yang teruji dan brand yang kuat, mari sukses bersama di industri kopi Indonesia.</p>
+                    <button class="btn-primary">Unduh Proposal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1442512595367-f2d30a2919d0?auto=format&fit=crop&w=800&q=80" alt="Interior Cafe" class="rounded-img">
+                </div>
+                <div class="text-box">
+                    <h3>Tentang Coffee Toffee</h3>
+                    <p>Berdiri sejak 2006, kami berdedikasi untuk mengembalikan budaya minum kopi di Indonesia. Kami percaya bahwa kopi Indonesia adalah salah satu yang terbaik di dunia.</p>
+                    <br>
+                    <p><strong>Visi Kami:</strong> Menjadi kebanggaan kopi Indonesia melalui semangat entrepreneurship.</p>
+                    <div class="stats">
+                        <div>
+                            <h1>150+</h1>
+                            <span>Gerai</span>
+                        </div>
+                        <div>
+                            <h1>15th</h1>
+                            <span>Pengalaman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo-footer">
+                    <i class="fas fa-leaf"></i> coffee toffee
+                </div>
+                <p>Menyajikan kehangatan dalam secangkir kopi asli Indonesia. Mari dukung petani lokal.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#peluang">Franchise</a></li>
+                    <li><a href="#berita">Berita</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <div class="map-container" style="margin-top: 20px; border-radius: 10px; overflow: hidden;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135000001!3d-6.19474135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnNDEuMSJTIDEwNsKwNDknMTAuNCJF!5e0!3m2!1sid!2sid!4v1625500000000!5m2!1sid!2sid" 
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+                <h4>Hubungi Kami</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Argopuro No. 45, Jawa Timur</li>
+                    <li><i class="fas fa-phone"></i> +62 812 3456 7890</li>
+                    <li><i class="fas fa-envelope"></i> info@coffeetoffee.co.id</li>
+                    <li><i class="far fa-clock"></i> Senin - Minggu: 08.00 - 23.00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Coffee Toffee Indonesia. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
