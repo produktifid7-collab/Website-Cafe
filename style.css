@@ -443,3 +443,12 @@ footer {
         margin-right: 0;
     }
 }
+/* Styling untuk gambar di Section Tentang */
+#tentang .img-box img {
+    width: 100%;           /* Mengikuti lebar kotak pembungkusnya (img-box) */
+    max-width: 350px;     /* Atur batas lebar maksimal gambar (misal 500px, silakan ubah sesuai selera) */
+    height: 350px;          /* Menjaga proporsi gambar agar tidak gepeng */
+    border-radius: 15px;   /* Membuat sudut gambar melengkung (estetik) */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Menambahkan bayangan halus (elegan) */
+    object-fit: cover;     /* Memastikan gambar terpotong rapi di dalam kotak */
+}
