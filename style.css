@@ -228,6 +228,39 @@ header.sticky .menu-icon { color: var(--secondary-color); }
     transition: 0.3s;
 }
 
+/* Styling Judul Kategori Menu */
+.menu-category {
+    grid-column: 1 / -1; /* Membentang penuh di semua kolom grid */
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--dark-green);
+    margin: 30px 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Menyembunyikan elemen ekstra sebelum tombol diklik */
+.menu-item.hidden-menu, 
+.menu-category.hidden-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Efek muncul halus (fade in) saat tombol diklik */
+.menu-item.show-menu, 
+.menu-category.show-menu {
+    display: flex;
+    animation: fadeInMenu 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .card:hover { transform: translateY(-10px); }
 
 .card img {
