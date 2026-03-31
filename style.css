@@ -155,14 +155,6 @@ header.sticky .menu-icon { color: var(--secondary-color); }
     background-attachment: fixed; /* Parallax effect */
 }
 
-/* Tambahkan ini di bagian bawah atau di dalam @media (max-width: 768px) */
-@media (max-width: 768px) {
-    .hero {
-        background-attachment: scroll; /* Matikan parallax di HP agar gambar tidak zoom-in */
-        height: 80vh; /* Sesuaikan tinggi agar tidak terlalu memenuhi layar HP */
-    }
-}
-
 .overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -255,42 +247,6 @@ header.sticky .menu-icon { color: var(--secondary-color); }
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-}
-
-/* Tambahkan/Update di bagian @media (max-width: 768px) di style.css */
-@media (max-width: 768px) {
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
-        gap: 15px; /* Jarak antar kotak menu */
-        padding: 0 10px;
-    }
-
-    .menu-item {
-        flex-direction: column; /* Gambar di atas, teks di bawah */
-        padding: 10px;
-        text-align: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .menu-item img {
-        width: 100%; /* Gambar selebar kotak menu */
-        height: 120px; /* Atur tinggi gambar agar seragam */
-        border-radius: 10px; /* Opsional: kotak tumpul */
-        margin-bottom: 10px;
-    }
-
-    .menu-details h4 {
-        font-size: 0.9rem; /* Ukuran teks lebih kecil agar muat */
-    }
-
-    .menu-details .price {
-        font-size: 0.85rem;
-    }
-    
-    .menu-details p {
-        display: none; /* Sembunyikan deskripsi panjang agar rapi di 2 kolom */
-    }
 }
 
 /* Efek muncul halus (fade in) saat tombol diklik */
